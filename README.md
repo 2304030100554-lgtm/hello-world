@@ -1,12 +1,30 @@
-# Simple Add Function
+# Simple check odd & even number check  Function
 
-This repository contains a basic JavaScript function that adds two numbers.
+IN this code user can apply number to check numer is odd or even.
+
 
 ## Code Example
 
 ```javascript
-function add(a, b) {
-  return a + b;
-}
+<!DOCTYPE html>
+<html>
+<body>
 
-console.log(add(5, 3)); 
+<input id="num" type="number" placeholder="Enter number">
+<button onclick="check()">Check</button>
+
+<p id="result"></p>
+
+<script>
+function check() {
+  let n = document.getElementById("num").value;
+  if (n % 2 == 0) {
+    document.getElementById("result").innerHTML = "Even";
+  } else {
+    document.getElementById("result").innerHTML = "Odd";
+  }
+}
+</script>
+
+</body>
+</html>
